@@ -271,3 +271,11 @@ footer { padding: 48px 0 24px; background: #070e20; color: #9aa8c5; font-size: .
 .vasool-bottom .btn { flex:0 0 auto; }
 @media(max-width:1000px) { .vasool-hero { grid-template-columns:1fr; } }
 @media(max-width:700px) { .vasool-hero { padding:22px; margin-bottom:52px; } .vasool-dashboard { padding:16px; } .vasool-audience { padding:38px 18px; } .vasool-bottom { align-items:stretch; flex-direction:column; } .vasool-bottom .btn { width:100%; } }
+
+
+/* Navigation spacing safeguard for medium desktop widths */
+@media (min-width: 981px) and (max-width: 1180px) {
+  .nav { gap: 16px; }
+  nav ul { gap: 14px; font-size: .84rem; }
+  nav .btn { padding-inline: 13px; }
+}
